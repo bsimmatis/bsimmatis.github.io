@@ -1,6 +1,5 @@
 # Github Assignment
 *BIOL812*
-***
 
 ### 1. When should you use Git for a project?
 * When you need to collaborate on code to run repetitive tasks with datasets.
