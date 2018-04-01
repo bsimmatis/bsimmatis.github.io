@@ -1,0 +1,294 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Biol812: Project Proposal},
+            pdfauthor={C. Juurakko, N. Kharazian (auditing), S. Knebel, B. Simmatis, L. Simmatis (auditing)},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+  \title{Biol812: Project Proposal}
+  \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+\subtitle{Broadening the spectra: looking beyond VRS-inferred chlorophyll a
+(650-700nm) to identify changes in whole-lake primary production.}
+  \author{C. Juurakko, N. Kharazian (auditing), S. Knebel, B. Simmatis, L.
+Simmatis (auditing)}
+  \preauthor{\centering\large\emph}
+  \postauthor{\par}
+  \predate{\centering\large\emph}
+  \postdate{\par}
+  \date{March 18, 2018}
+
+
+\begin{document}
+\maketitle
+
+\section{Team name: The Biomath 5}\label{team-name-the-biomath-5}
+
+\section{Introduction}\label{introduction}
+
+Water quality information is critical in assessing lake health, but
+little long-term monitoring data are available to determine whether
+modern conditions are within a range of pre-impact (e.g.~prior to
+eutrophication) variability. Typically, impacted lake systems are
+monitored after the impact has occurred, resulting in possibly
+optimistic, but arguably unrealistic, management strategies. In Canada,
+regular lake monitoring typically only covers the past few decades (if
+present at all) and is often initiated in response to detection of an
+environmental problem, and as a result aims to answer how have humans
+altered conditions in a system after a specific event (e.g.~a
+cyanobacterial bloom). Given the paucity of monitoring data,
+understanding how, where and when anthropogenic activities have changed
+aquatic environments beyond their natural range of variability is
+difficult, as many impacts are regionally or locally specific Michelutti
+et al. (2009).
+
+\section{Data Collection and
+Description}\label{data-collection-and-description}
+
+Paleolimnological approaches use a variety of biological, physical and
+chemical indicators preserved in lake sediments to reconstruct past
+environmental conditions (Smol, 2008). Visible range spectroscopy (VRS)
+can track past changes in whole lake primary production by tracking
+sedimentary chlorophyll a and its degradation products, providing
+information on shifts in lake trophic status (Michelluti et al., 2010).
+Most cores were collected and had the sediment-water interface
+stabilized with Zorbitol© before refrigerated shipment to Université
+Laval, Laval, QC. Cores were then split and stored in a cold room
+(\textless{}4°C) prior to shipment to PEARL, Queen's University,
+Kingston, ON. Individual intervals of freeze-dried sediment have been
+dated via gamma spectroscopy at Queen's University using unsupported
+210Pb activities in a constant rate of supply (CRS) model (Appleby and
+Oldfield, 1978; Binford 1990). Freeze-dried sediments have been sieved
+(120µm mesh) and sub-sampled such that a 50mL glass scintillation vial
+has at least 1mm of sediment. The sediments have been scanned through
+the base of the glass vials using a Rapid Content Analyzer (FOSS
+NIRSystems Inc.) operating over a range of 400-2,500 nm.
+
+The data is comprised of a series of absorbance values from 400-2,500nm
+through time, which broadly represents the proportion of organic matter
+in the sediment. The absorbance values demonstrate the type of algae
+present in the lake depending on where absorbance peaks through the
+spectra (e.g.~chlorophyll a is expected to occur between 650-700nm,
+representing whole-lake primary production). Each sediment interval has
+2100 values and each lake core can have over 30 intervals of sediment
+stored in 2D datasets. Our largest data set, Muskrat Lake, has 71
+intervals of sediment with 2100 values per interval for a total of
+\textasciitilde{}72 000 data points.
+
+The simulated data will be generated according to a variation on
+Agent-based modelling (ABM) that is commonly used in ecology, referred
+to as invidivual-based modelling (IBM) . In particular, we shall use the
+parameter of absorbance to simulate the evolution of an algae population
+in a lake according to individual behavior. The data obtained will be
+used to make predictions about how the enviroment will change according
+to varying levels of absorbance.
+
+\section{Sites}\label{sites}
+
+Stoco Lake was classified as eutrophic (spring TP ranged from \(30-50\)
+\(\mu g\cdot L^{-1}\)) until sewage management upgrades were installed
+in the late 1980's. Currently, the lake is mesotrophic (spring TP
+\(\sim 15\) \(\mu g\cdot L^{-1}\), maximum depth \(12m\)), though
+cyanobacterial blooms and excessive summer algal growth still occur
+frequently, likely due to the internal loading of phosphorus from the
+sediments.
+
+Lac Duhamel (maximum depth \(26m\); oligotrophic, summer TP \(<4\)
+\(\mu g\cdot L^{-1}\)) is located upstream of Mont Tremblant, Quebec,
+has records of high human impact, including forestry and highway road
+salt application. It is extremely sensitive to cultural eutrophication,
+primarily due to the channelization of its tributaries, Shield bedrock,
+and long water residence time of 2 years (Biofilia, 2004).
+
+Lac-des-Îles (maximum depth \(37m\)) is located on the Canadian Shield
+near Mont-Laurier, Quebec, and is classified as oligo-mesotrophic
+(summer TP \(\sim 10.5\) \(\mu g\cdot L^{-1}\); Enviro'Eau, 2009). The
+lake supports a variety of sports fish, including lake trout, and is
+generally considered environmentally sensitive to eutrophication due to
+its relatively low nutrient levels.
+
+Muskrat Lake (maximum depth \(60m\)) is valued for its recreational use
+and as a drinking water source for the town of Cobden, Ontario, located
+at the south end of the lake. High total phosphorus (\(>40\)
+\(\mu g/L\)), low water clarity, and algal blooms have raised water
+quality concerns, largely attributed to eutrophication from heavy
+agricultural watershed development.
+
+\section{Research Questions}\label{research-questions}
+
+We aim to determine whether (1) chlorophyll a changes over time in each
+lake, and (2) we can ``fingerprint'' deep vs shallow eutrophic lakes,
+and, if so, whether the differences correlate to the wavelengths of
+known specific pigments.
+
+\section{Significance}\label{significance}
+
+This study aims to explore the environmental histories of previously
+unmonitored lakes to inform local lake management decisions regarding
+water quality. Further, absorbance has been previously used to
+quantitatively reconstruct chlorophyll a, but other spectra have not
+been fully explored despite the potential use for reconstructing
+soft-bodied algal communities (i.e.~cyanobacteria using genus-specific
+pigments such as echinenone). This information can be further used to
+determine if a lake system has reached an ecological tipping point and
+fundamentally changed from pre-eutrophication conditions.
+
+\section{Pipeline}\label{pipeline}
+
+Our analysis will plot and determine differences in absorbance values
+through time. Each member of our team will be responsible for a
+different module (Figure 1). Bash script will be used to access and
+organize all files, as well as generate README files and text
+descriptions of the data sets. R and/or Python will be used for the
+remainder of the processing. GitHub will be used to pull raw data, store
+text-based files (for example, the text for the poster), and for general
+communication or troubleshooting of code. See appendix for visual
+representation.
+
+Brigitte will be responsible for the module relating to reconstructing
+chlorophyll a, plotting and processing the raw absorbance data, and
+determining the VRS regions with the greatest variance through time.
+This will involve the creation of functions for use in loops to generate
+the inferred chlorophyll a data, creation of a function or other program
+to determine the regions with the most variance and plotting of data.
+
+Collin will be responsible for accessing climate data using Python or R
+and plotting the georeferenced coring locations using spatial ecology
+approaches. He is also responsible for plotting climate data,
+determining its change over time and accessing it appropriately using
+Python or R.
+
+Stefanie will be responsible for creating a mathematical model and
+programming a simulation in python based on that model. She will run the
+simulation mutliple times while varying the parameters of the model and
+plot one key finding. She will also work with R-markdown and LaTeX to
+create a poster for everyone's work to be included.
+
+Leif will be creating and applying machine learning techniques to
+identify and contrast VRS spectra for each lake, with the goal of
+investigating whether the depth or trophic status can be identified from
+only the absorbance values.
+
+Nazila will observe each component of the project to ensure analysis and
+visualizations are informative and void of extraneous `ink'. She will
+also assist Stefanie with her python code and will make comparisons with
+R script.
+
+\section{Predicted or hypothesized
+results}\label{predicted-or-hypothesized-results}
+
+\section{References}\label{references}
+
+Appleby, P.G., and Oldfield, F. 1978. The calculation of lead-210 dates
+assuming a constant rate of supply of unsupported 210Pb to the sediment.
+Catena, 5:1-8.
+
+Binford, M. 1990. Calculation and uncertainty analysis of 210Pb dates
+for PIRLA project lake sediment cores. Journal of Paleolimnology, 3(3):
+253-267.
+
+Biofilia (Consultants en Environnement). 2004. Diagnose de basin
+versant: Lac Duhamel, Ville de Mont-Tremblant. Rapport final (only
+available in French), URL:
+\url{http://lacduhamel.ca/wp-content/uploads/2015/09/diagnose-bassin-versant.pdf},
+accessed 15 Nov 2017.
+
+Enviro'Eau (Services-Conseils). 2009. Diagnose du Lac- des- Îles:
+Municipalité de Sain-Aimé-du-Lac-des- Îles et Ville de Mont-Laurier,
+Québec. Rapport final (only available in French), URL:
+www.villemontlaurier.qc.ca/DATA/DOCUMENT/Rapport et annexes-diagnose lac
+des Îles-2009.pdf, accessed 9 Nov 2017.
+
+\begin{figure}
+\centering
+\includegraphics{Figure 1.eps}
+\caption{General workflow and areas of responsibility for data
+processing.}
+\end{figure}
+
+\begin{figure}
+\centering
+\includegraphics{Figure 2.eps}
+\caption{General workflow and areas of responsibility for data
+processing.}
+\end{figure}
+
+\hypertarget{refs}{}
+\hypertarget{ref-Michelutti_2009}{}
+Michelutti, Neal, Jules M. Blais, Brian F. Cumming, Andrew M. Paterson,
+Kathleen Rühland, Alexander P. Wolfe, and John P. Smol. 2009. ``Do
+Spectrally Inferred Determinations of Chlorophyll a Reflect Trends in
+Lake Trophic Status?'' \emph{Journal of Paleolimnology} 43 (2). Springer
+Nature: 205--17.
+doi:\href{https://doi.org/10.1007/s10933-009-9325-8}{10.1007/s10933-009-9325-8}.
+
+
+\end{document}

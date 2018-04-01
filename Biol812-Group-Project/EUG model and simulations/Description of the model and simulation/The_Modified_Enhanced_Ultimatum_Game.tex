@@ -1,0 +1,185 @@
+\documentclass[]{article}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+\else % if luatex or xelatex
+  \ifxetex
+    \usepackage{mathspec}
+  \else
+    \usepackage{fontspec}
+  \fi
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\hypersetup{unicode=true,
+            pdftitle={Evolutionary game theory: A modified Ultimatum game model with algae as players},
+            pdfauthor={Stefanie Knebel},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage{graphicx,grffile}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Redefines (sub)paragraphs to behave more like sections
+\ifx\paragraph\undefined\else
+\let\oldparagraph\paragraph
+\renewcommand{\paragraph}[1]{\oldparagraph{#1}\mbox{}}
+\fi
+\ifx\subparagraph\undefined\else
+\let\oldsubparagraph\subparagraph
+\renewcommand{\subparagraph}[1]{\oldsubparagraph{#1}\mbox{}}
+\fi
+
+%%% Use protect on footnotes to avoid problems with footnotes in titles
+\let\rmarkdownfootnote\footnote%
+\def\footnote{\protect\rmarkdownfootnote}
+
+%%% Change title format to be more compact
+\usepackage{titling}
+
+% Create subtitle command for use in maketitle
+\newcommand{\subtitle}[1]{
+  \posttitle{
+    \begin{center}\large#1\end{center}
+    }
+}
+
+\setlength{\droptitle}{-2em}
+  \title{Evolutionary game theory: A modified Ultimatum game model with algae as
+players}
+  \pretitle{\vspace{\droptitle}\centering\huge}
+  \posttitle{\par}
+  \author{Stefanie Knebel}
+  \preauthor{\centering\large\emph}
+  \postauthor{\par}
+  \predate{\centering\large\emph}
+  \postdate{\par}
+  \date{2018}
+
+
+\begin{document}
+\maketitle
+
+\section{What is the Ultimatum Game
+(UG)?}\label{what-is-the-ultimatum-game-ug}
+
+The Ultimatum Game (UG) is game theoretical model of fairness and is a
+focal point for studies in the evolution of social behaviour. In the UG,
+two players must decide on the division of resources. In contrast to the
+predictions of traditional game theory, participants appear to make
+irrational decisions; participants tend to divide the resources equally
+and would rather suffer a loss than to accept an unfair division. Here,
+we investigate a new UG theoretical model for the evolution of fairness,
+the Enhanced Ultimatum Game (EUG) where we introduce a cost associated
+with a demand.
+
+The Ultimatum Game (UG) involves two players, the proposer and the
+responder, deciding on how to divide a resource between them. The
+proposer first offers an amount to the responder. If the responder
+accepts the offer then the resource is divided according to the
+proposal. If the offer is rejected then both players walk away with
+nothing.
+
+In the Enhanced Ultimatum Game (EUG), invented by Peter Taylor, Andrew McEachern and the author, the responder takes on an additional role as the
+demander. In this version, the responder first makes a demand for how to
+divide the resources and the proposer will then make an offer. The
+responder will then accept, with a cost, or reject.
+
+The EUG models fairness as both players have the opportunity to be fair,
+split the resource evenly, or unfair, attempt to take a larger portion.
+Rejection of an unfair offer is interpreted as a form of punishment for
+deviating from fairness. A truly rational player would seek to maximize
+their payoff and should accept any offer which results in a positive
+payoff, fair or unfair, and to demand as much as possible. However,
+several models have shown that participants commonly make fair offers
+and reject unfair offers, leading to fairness as a potential
+evolutionary outcome.
+
+The EUG incorporates a demand and cost into the game and is played
+between two participants as follows:
+
+\begin{itemize}
+    \item There are $n$ dollars to be divided 
+    \item The responder demands an amount $d$ such that $0<d<n$
+    \item The proposer then makes an offer $p$
+    \item The responder has a minimum, $M$, that they are willing to accept such that $M \leq d$
+    \item There is a cost to not giving a $d = M$. cost $= c(d-M)$, $c>0$.
+    \item If $p \leq M$ then the dollars are divided accordingly. If $P>M$ then both receive zero dollars.
+\end{itemize}
+
+Michelutti et al. (2009)
+
+\section{How has the UG model been modified for this project? How is
+this model unique from literature?}\label{how-has-the-ug-model-been-modified-for-this-project-how-is-this-model-unique-from-literature}
+The EUG model is a modified version of the model found within the literature, the UG model. Also, for this project, we are interested in the amount of Chlorophyll a within a lake and so, for the simulation, algae will act as the players in the EUG model. Also, several factors influence the evolution of chlorophyll in an algae population (ie. nutrients, sunlight, total phosphate etc). For instance, Total Phosphate (TP) found within a lake is thought to influence the quantity of a type of algae and sun exposure is associated with specific chlorophyll types. Therefore, for the purposes of this project, one may view TP and sunlight exposure as the resource to be divided in the EUG model. This is following an approach similar to the papers titles     . This will allow us to make predictions about the group research question: Whether Chlorophyll a changes over time in a lake, given a particular environment. 
+
+\section{In what program was the model
+coded?}\label{in-what-program-was-the-model-coded}
+
+I created my main code in python.
+
+\section{What are the parameters?}\label{what-are-the-parameters}
+There are several possibilities (perhaps infinite) for parameter settings and so in the initial stages I was working out exactly what I wanted to analyse. Below is a list of the more interesting ways the simulation was altered:
+\begin{itemize}
+	\item created a data set from various distributions (ie. poisson distribution)
+	\item
+	\item
+	\item
+	\item
+	\item
+	\item 
+\end{itemize}
+Only a few graphs are stored within the folder titled 'Plots with varying parameters' as it is not meant to be the point of interest.\\
+For the graph displayed on the poster, the following parameters were used:
+
+\section{How were the parameters
+varied?}\label{how-were-the-parameters-varied}
+For the graph displayed on the poster,  was run for values of 
+
+\section{Any interesting findings?}\label{any-interesting-findings}
+It was found that 
+
+\section*{References}\label{references}
+\addcontentsline{toc}{section}{References}
+
+\hypertarget{refs}{}
+\hypertarget{ref-Michelutti_2009}{}
+Michelutti, Neal, Jules M. Blais, Brian F. Cumming, Andrew M. Paterson,
+Kathleen Rühland, Alexander P. Wolfe, and John P. Smol. 2009. ``Do
+Spectrally Inferred Determinations of Chlorophyll a Reflect Trends in
+Lake Trophic Status?'' \emph{Journal of Paleolimnology} 43 (2). Springer
+Nature: 205--17.
+doi:\href{https://doi.org/10.1007/s10933-009-9325-8}{10.1007/s10933-009-9325-8}.
+
+Carlson, R.E. and J. Simpson. 1996. A Coordinator’s Guide to Volunteer Lake Monitoring Methods. North American Lake Management Society. 96 pp.
+
+
+\end{document}
