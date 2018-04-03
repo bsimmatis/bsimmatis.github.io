@@ -1,10 +1,11 @@
-# Github Assignment
-*BIOL812*
+# Virtual Poster
+*S Knebel, C Juurakko, N Kharazian, B Simmatis, L Simmatis. 
+*Prepared for BIOL812*
 
-### 1. When should you use Git for a project?
+### Introduction
 * When you need to collaborate on code to run repetitive tasks with datasets.
 
-### 2. What kind of files/info should be saved in a Git repository? What types of files/info should not be included in a Git repo?
+### Research Questions
 * Code and text files can be saved to a Git repository.
 * Private or confidential files and information should not be included.
 
