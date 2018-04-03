@@ -1,0 +1,57 @@
+---
+title: 'Evolutionary game theory: A modified Ultimatum game model with algae as players'
+author: "Stefanie Knebel"
+date: "2018"
+output:
+  pdf_document:
+    fig_caption: yes
+    keep_tex: yes
+    number_sections: yes
+  word_document: default
+bibliography: references.bib
+---
+
+```{r, echo=FALSE}
+  library(knitcitations); cleanbib()
+  cite_options(citation_format = "pandoc", check.entries=FALSE)
+  library(bibtex)
+  #used to write Reference page  
+```
+
+# What is the Ultimatum Game (UG)?
+
+The Ultimatum Game (UG) is game theoretical model of fairness and is a focal point for studies in the evolution of social behaviour. In the UG, two players must decide on the division of resources. In contrast to the predictions of traditional game theory, participants appear to make irrational decisions; participants tend to divide the resources equally and would rather suffer a loss than to accept an unfair division. Here, we investigate a new UG theoretical model for the evolution of fairness, the Enhanced Ultimatum Game (EUG) where we introduce a cost associated with a demand.
+
+The Ultimatum Game (UG) involves two players, the proposer and the responder, deciding on how to divide a resource between them. The proposer first offers an amount to the responder. If the responder accepts the offer then the resource is divided according to the proposal. If the offer is rejected then both players walk away with nothing.
+
+In the Enhanced Ultimatum Game (EUG), invented by Peter Taylor and Andrew McEachern, the responder takes on an additional role as the demander. In this version, the responder first makes a demand for how to divide the resources and the proposer will then make an offer. The responder will then accept, with a cost, or reject. 
+
+The EUG models fairness as both players have the opportunity to be fair, split the resource evenly, or unfair, attempt to take a larger portion. Rejection of an unfair offer is interpreted as a form of punishment for deviating from fairness. A truly rational player would seek to maximize their payoff and should accept any offer which results in a positive payoff, fair or unfair, and to demand as much as possible. However, several models have shown that participants commonly make fair offers and reject unfair offers, leading to fairness as a potential evolutionary outcome.
+
+The EUG incorporates a demand and cost into the game and is played between two participants as follows:
+\begin{itemize}
+    \item There are $n$ dollars to be divided 
+    \item The responder demands an amount $d$ such that $0<d<n$
+    \item The proposer then makes an offer $p$
+    \item The responder has a minimum, $M$, that they are willing to accept such that $M \leq d$
+    \item There is a cost to not giving a $d = M$. cost $= c(d-M)$, $c>0$.
+    \item If $p \leq M$ then the dollars are divided accordingly. If $P>M$ then both receive zero dollars
+\end{itemize}
+
+`r citet("10.1007/s10933-009-9325-8")`
+
+# How has the UG model been modified for this project? How is this model unique from literature?
+
+# In what program was the model coded?
+I created my main code in python.
+
+# What are the parameters? 
+
+# How were the parameters varied?
+
+# Any interesting findings?
+# References
+
+```{r, warning=FALSE, message=FALSE, echo=FALSE} 
+  write.bibtex(file="references.bib")
+```
