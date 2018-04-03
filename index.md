@@ -1,5 +1,5 @@
 # Virtual Poster
-*S Knebel, C Juurakko, N Kharazian, B Simmatis, L Simmatis. 
+*S Knebel, C Juurakko, N Kharazian, B Simmatis, L Simmatis.* 
 *Prepared for BIOL812*
 
 ### Introduction
